@@ -25,12 +25,14 @@ export default function Todo() {
       />
       <button onClick={handleClick}>Add Todo</button>
       <div>
+        <ul>
         {todo?.map((item, index) => (
           <li>
             {item}
             <button onClick={(e) => handleDelete(item)}>Delete</button>
           </li>
         ))}
+        </ul>
       </div>
     </div>
   );
